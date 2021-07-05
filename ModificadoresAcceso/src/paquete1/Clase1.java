@@ -9,7 +9,7 @@ public class Clase1 {
     public String attrPublico = "Attr Publico";
     
     public  Clase1(){
-        System.out.println("Constructor publico");
+        System.out.println("Constructor publico...");
     }
     
     public void metodoPublico(){
