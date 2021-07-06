@@ -3,6 +3,11 @@ package paquete1;
 /*
 las clases publicas las podemos acceder desde cualquier
 paquete dentro del proyecto
+ordenamos de mas a menos restrictivo
+public
+protected
+package(ausencia de modificador)
+private
 */
 public class Clase1 {
     //Public
