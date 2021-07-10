@@ -20,9 +20,9 @@ public class TestSobreescritura {
         más genericos
         
         */
-        imprimir(empleado);
+        imprimir(empleado);  
         imprimir(gerente1);
-    }
+    } 
     //Polimorfismo
     public static void imprimir(Empleado empleado){
         System.out.println("empleado = " + empleado.obtenerDetalles());

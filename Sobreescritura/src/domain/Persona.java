@@ -9,4 +9,21 @@ public class Persona {
     public Persona(){
         this.idPersona = ++Persona.contadorPersonas;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public static int getContadorPersonas() {
+        return contadorPersonas;
+    }
+
+    public static void setContadorPersonas(int contadorPersonas) {
+        Persona.contadorPersonas = contadorPersonas;
+    }
+    
 }
