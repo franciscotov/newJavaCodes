@@ -20,6 +20,6 @@ public class TestCanversionObjetos {
         clases(padre-hija), se debe hacer conversión de objetos
         
         */
-        ((Empleado) empleado).getTipoEscritura();
+        ((Escritor) empleado).getTipoEscritura();
     }
 }
