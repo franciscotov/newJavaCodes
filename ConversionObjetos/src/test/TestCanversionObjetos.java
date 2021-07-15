@@ -9,9 +9,9 @@ public class TestCanversionObjetos {
         empleado = new Escritor("Fran", 4000, TipoEscritura.CLASICO);
         System.out.println("empleado = " + empleado);
         /*
-        a nivel de compilacion o se sabe a donde apunta la variable empleado
+        a nivel de compilacion no se sabe a donde apunta la variable empleado
         el polimorfismo no se puede definir a nivel de compilador
-        se define al mmento en q se ejecuta la linea que llama al metodo
+        se define al momento en q se ejecuta la linea que llama al metodo
         */
         System.out.println(empleado.obtenerDetalles());
         
@@ -20,6 +20,13 @@ public class TestCanversionObjetos {
         clases(padre-hija), se debe hacer conversión de objetos
         
         */
-        ((Escritor) empleado).getTipoEscritura();
+        //((Escritor) empleado).getTipoEscritura();
+        //otra forma DownCasting
+        Escritor escritor = (Escritor) empleado;
+        escritor.getTipoEscritura();
+        
+        // Se puede asignar el tipo hija a una variable de tipo padre
+        // es posible el uppcasting
+        Empleado empleado2 = escritor;
     }
 }
